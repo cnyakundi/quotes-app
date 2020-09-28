@@ -1,0 +1,17 @@
+<p>{{quote.quote}}</p>
+<p>{{quote.author}}</p>
+<p>{{quote.poster}}</p>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <p>Upvotes:{{quote.upvotes}}</p>
+            <button type="button" class="btn btn-outline-success" (click)="upvote()">👍 </button>
+        </div>
+        <div class="col">
+            <p>Downvotes:{{quote.downvotes}}</p>
+            <button type="button" class="btn btn-outline-success" (click)="downvote()">👎 </button>
+        </div>
+    </div>
+</div>
+<button class="bg-danger" (click)='quoteDelete(true)'>Delete</button>
+<p>This quote was written {{quote.completeDate|dateCount}} days ago</p>
