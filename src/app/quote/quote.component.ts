@@ -52,7 +52,7 @@ export class QuoteComponent implements OnInit {
     this.showNew = false;
   }
   onCancel() {
-    this.
+    this.showNew
   }
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
