@@ -54,12 +54,12 @@ export class QuoteComponent implements OnInit {
 
   onCancel() {
     this.showNew = false;
-  }
+  }       
 
   delete(i) {
     this.quotes.splice(i, 1);
   }
-  
+
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
     quote.id = quoteLength+1;
