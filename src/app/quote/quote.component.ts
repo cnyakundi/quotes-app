@@ -57,7 +57,7 @@ export class QuoteComponent implements OnInit {
   }
 
   delete(i) {
-    this.quotes.splice()
+    this.quotes.splice(i, 1)
   }
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
