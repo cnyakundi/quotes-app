@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Quote } from '../quote';
+import { Form } from '@angular/forms';
 
 @Component({
   selector: 'app-quote',
@@ -13,6 +14,8 @@ export class QuoteComponent implements OnInit {
     new Quote("Cyprian is Nyakundi", "Guru", "User2", 0, 0, new Date(2016,4,13)),
   ];
   
+  constructor() { }
+
   completeQuote(isComplete, index){
     if (isComplete) {
       this.quotes.splice(index,1);
@@ -66,8 +69,6 @@ export class QuoteComponent implements OnInit {
     quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
   }
-
-  constructor() { }
 
   ngOnInit(): void {
   }

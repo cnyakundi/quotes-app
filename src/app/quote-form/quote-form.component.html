@@ -5,24 +5,24 @@
         <div class="form-group">
 
             <label for="quote">Quote</label>
-            <textarea class="form-control" id="name" rows="3" placeholder="Quote" name="name" required></textarea>
+            <textarea class="form-control" id="name" [(ngModel)]="newQuote.quote" rows="3" placeholder="Quote" name="name" #name="ngModel" required></textarea>
 
         </div>
         <div class="form-group">
 
             <label for="author">Author</label>
-            <input type="text" class="form-control" id="author" placeholder="Author" name="author" required>
+            <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" placeholder="Author" name="author" #author="ngModel" required>
 
         </div>
         <div class="form-group">
             <label for="author">Your Name</label>
-            <input type="text" class="form-control" id="author" placeholder="" name="person" required>
+            <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.poster" placeholder="" name="person" #person=ngModel required>
 
         </div>
         <div class="form-group">
 
             <label for="date">Date</label>
-            <input type="date" class="form-control" id="date" name="date" required>
+            <input type="date" class="form-control" id="date" [(ngModel)]="newQuote.completeDate" name="date" #date="ngModel" required>
 
         </div>
         <div class="row">
